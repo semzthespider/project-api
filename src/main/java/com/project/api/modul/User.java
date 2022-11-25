@@ -14,6 +14,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    
 //    @NotEmpty(message = "Emailshould not be empty")
     @Column(nullable = false, unique = true)
     private String email;
